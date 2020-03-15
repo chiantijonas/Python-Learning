@@ -9,7 +9,7 @@ dict: X={"a":1,"b":2,"c":3} --》这个就是一个json，长得很像。其中�
 set: X={"a","b","c"}--》set里面存的是key，所以都是唯一的。<br>
 list: X=["a","b,"c"]--》用方括号的就是list，除了变量之外都可以储存。变量的意思就是举个例子a=10，这样a就是一个变量。<br>
 
-1.set用法<br>
+### 1.set用法<br>
 python 集合的添加有两种常用方法，分别是add和update。<br>
 add方法：是把要传入的元素做为一个整个添加到集合中，例如：<br>
 ```python
@@ -55,28 +55,94 @@ set(['y', 'python', 'b', 'o'])
 ```
 
 
-# Python-for-还没看
+# Python-for-20200315
 
-2.list用法
-列表的添加 append(e)，追加到底部
+### 2.list用法
+列表的添加可以用 append(e)，追加到底部
+
+```python
+
+list = [1,2,3,4]
+list.append(5)
+print(list)
+[1, 2, 3, 4, 5]
+list后面是方括号[]，方括号里面可以直接加有引号的和没引号的都行，只要不是变量就行
+
+
+list = ['1','2','3','4']
+list.append(5)
+print(list)
+['1', '2', '3', '4', 5]
+上面这个例子就可以看出来append里面加的就会直接加到list后面，例如上面就没有加引号。
+
+```
 
 列表的删除pop(index i)，删除索引所在的元素
 
+```python
+list = [1,2,3,4,5]
+list.pop(2)
+print(list)
+[1, 2, 4, 5]
+上面这个例子pop掉的是索引的那一列，索引列是从0开始的。我上面pop后面括号是2，所以删除了第三列。
+
+list = ['1','2','3','4','5']
+list.pop(2)
+print(list)
+['1', '2', '4', '5']
+
+```
+
 列表的删除Remove(e)方法，删除元素e
+
+```python
+list = ['1','2','3','4','5']
+list.remove('2')
+print(list)
+['1', '3', '4', '5']
+注意一下remove里面的东西是要list里面有的元素，如果上面的remove里面没有加引号，就会报错了。
+
+list = [1,2,3,4,5]
+list.remove(2)
+print(list)
+[1, 3, 4, 5]
+
+
+```
 
 列表的高级用法list.extend(list2)或者用+，求两个列表相加起来后组成的集合
 区别:extend()是往list中添加list2的元素，不会生成新的元素
-+是会生成一个新的list
++是会生成一个新的list，，这个句话是啥意思呢？？？？
+
+```python
+list1 = [1,2,2]
+list2 = [3,4,5]
+list1.extend(list2)
+print(list1)
+[1, 2, 2, 3, 4, 5]
+
+```
 
  
-3.dict词典用法
-添加元素dict[' ']=''
+### 3.dict词典用法
+
+添加元素dict[' ']=''<br>
+
+```python
+dict={"a":1,"b":2,"c":3}
+dict['d']=4这里要注意一下，给dict加字段的时候，用的是方框括号[],然后等于的值在后面
+print(dict)
+{'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+
+```
 
 删除元素pop
 
- 
-4.list和set互相转换
+```python
+dict={'a':1,'b':2,'c':3}
+dict.pop('c')注意一下这里pop是方法，所以用的是小括号()
+print(dict)
+{'a': 1, 'b': 2}
 
- 
-
-
+```
