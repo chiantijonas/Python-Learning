@@ -221,3 +221,14 @@ dict={'a':1,'b':2,'c':3}
 dict.pop('c')注意一下这里pop是方法，所以用的是小括号()，dict只能对key操作，所以只能pop掉c，而不能像list一样按照索引pop
 print(dict)
 >>>{'a': 1, 'b': 2}
+```
+
+4.list和set互相转换
+
+```python
+lst = [1,2,3,4,5]
+a = set(lst)
+print(a)
+>>>
+{1, 2, 3, 4, 5}
+```
