@@ -1,20 +1,20 @@
 # 20200315
 ## NumPy Ndarray 对象 
 
-array(object, dtype=None, copy=True, order='K', subok=False, ndmin=0)
+array(object, dtype=None, copy=True, order='K', subok=False, ndmin=0) <br>
 
-object
-数组或嵌套的数列
-dtype
-数组元素的数据类型，可选,数据类型例如str（字符，加引号的）、int（整数）、float（1.05）
-copy
-对象是否需要复制，可选
-order
-创建数组的样式，C为行方向，F为列方向，A为任意方向（默认）
-subok
-默认返回一个与基类类型一致的数组
-ndmin
-指定生成数组的最小维度
+object <br>
+数组或嵌套的数列 <br>
+dtype <br>
+数组元素的数据类型，可选,数据类型例如str（字符，加引号的）、int（整数）、float（1.05） <br>
+copy <br>
+对象是否需要复制，可选 <br>
+order <br>
+创建数组的样式，C为行方向，F为列方向，A为任意方向（默认） <br>
+subok <br>
+默认返回一个与基类类型一致的数组 <br>
+ndmin <br>
+指定生成数组的最小维度 <br>
 
 
 ```python
