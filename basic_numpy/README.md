@@ -51,6 +51,37 @@ a.shape
 
 # 20200316 
 ## NumPy 创建数组 
+创建一个有固定形状的随机数组
+```python
+import numpy as np 
+np.empty([3,2],dtype = int)
+>>>array([[ 0,  0],
+       [ 0,  0],
+       [ 0, 90]])
+```
+
+创建一个有固定形状的值都是0的数组
+```python
+np.zeros([2,3],dtype = int)
+array([[0, 0, 0],
+       [0, 0, 0]])
+```
+另外还有ones，原理同上,但是就可以用1乘以任何数得到其他值的结果
+```python
+a = np.ones([2,4],dtype = float)
+a
+>>>array([[1., 1., 1., 1.],
+       [1., 1., 1., 1.]])
+a*2
+>>>array([[2., 2., 2., 2.],
+       [2., 2., 2., 2.]])
+```   
+生成等差数列linspace
+```python
+
+np.linspace(2,10,3,dtype=int)
+>>>array([ 2,  6, 10])
+```
 
 
 ## NumPy 切片和索引 
