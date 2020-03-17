@@ -1,4 +1,34 @@
 # Python-for-20200314
+##一些对字符串的操作
+add()
+对两个数组的逐个字符串元素进行连接<br>
+multiply()
+返回按元素多重连接后的字符串<br>
+center() 
+居中字符串<br>
+capitalize() 
+将字符串第一个字母转换为大写<br>
+title() 
+将字符串的每个单词的第一个字母转换为大写<br>
+lower() 
+数组元素转换为小写<br>
+upper() 
+数组元素转换为大写<br>
+split() 
+指定分隔符对字符串进行分割，并返回数组列表<br>
+splitlines() 
+返回元素中的行列表，以换行符分割
+strip() 
+移除元素开头或者结尾处的特定字符
+join() 
+通过指定分隔符来连接数组中的元素
+replace() 
+使用新字符串替换字符串中的所有子字符串
+decode() 
+数组元素依次调用str.decode
+encode() 
+数组元素依次调用str.encode
+
 
 ## list set dict是什么
 
