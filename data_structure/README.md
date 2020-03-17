@@ -1,5 +1,14 @@
 # Python-for-20200314
-##一些对字符串的操作
+## 基础三部曲<br>
+
+#1. int float str bool<br>
+1, 1.03, 'hello', True<br>
+#2. list set dict<br>
+[] {} {k:v}<br>
+#3. numpy pandas<br>
+
+
+## 一些对字符串的操作<br>
 add()
 对两个数组的逐个字符串元素进行连接<br>
 multiply()
@@ -17,17 +26,17 @@ upper()
 split() 
 指定分隔符对字符串进行分割，并返回数组列表<br>
 splitlines() 
-返回元素中的行列表，以换行符分割
+返回元素中的行列表，以换行符分割<br>
 strip() 
-移除元素开头或者结尾处的特定字符
+移除元素开头或者结尾处的特定字符<br>
 join() 
-通过指定分隔符来连接数组中的元素
+通过指定分隔符来连接数组中的元素<br>
 replace() 
-使用新字符串替换字符串中的所有子字符串
+使用新字符串替换字符串中的所有子字符串<br>
 decode() 
-数组元素依次调用str.decode
+数组元素依次调用str.decode<br>
 encode() 
-数组元素依次调用str.encode
+数组元素依次调用str.encode<br>
 
 
 ## list set dict是什么
