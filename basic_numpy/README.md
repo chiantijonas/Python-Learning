@@ -151,5 +151,38 @@ x[x>5]
 ## NumPy 算术函数 
 
 ## NumPy 统计函数 
+numpy.amin() 用于计算数组中的元素沿指定轴的最小值。<br>
+numpy.amax() 用于计算数组中的元素沿指定轴的最大值。
+```python
+a = np.array([[1,2,3,4,5,6,7,8]]).reshape(4,2)（这里用array的好处就是可以reshape一下）
+a
+>>>array([[1, 2],
+       [3, 4],
+       [5, 6],
+       [7, 8]])
+np.amin(a,1)（1是纵坐标，0是横坐标）
+>>>array([1, 3, 5, 7])
+```
+numpy.ptp()函数计算数组中元素最大值与最小值的差（最大值 - 最小值）。
+```python
+a = np.array([[1,2,3,4,5,6,7,8]]).reshape(4,2)（这里用array的好处就是可以reshape一下）
+a
+>>>array([[1, 2],
+       [3, 4],
+       [5, 6],
+       [7, 8]])
+np.ptp(a,0)（1是纵坐标，0是横坐标）
+>>>array([6, 6])
+```
+
+以下还有一些统计类函数，用法和amin、amax差不多<br>
+numpy.median()<br>
+numpy.mean()<br>
+numpy.average()<br>
+标准差np.std<br>
+方差np.var<br>
+
+还有一个percentile，是取百分比的，大概看了一下，有个印象吧，主要我还没想到应用场景。
+
 
 ## NumPy 排序、条件刷选函数
