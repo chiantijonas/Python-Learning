@@ -101,16 +101,16 @@ set(['y', 'python', 'b', 'o'])
 
 ```python
 
-list = [1,2,3,4]
-list.append(5)
-print(list)
+lst = [1,2,3,4]
+lst.append(5)
+print(lst)
 [1, 2, 3, 4, 5]
 list后面是方括号[]，方括号里面可以直接加有引号的和没引号的都行
 
 
-list = ['1','2','3','4']
-list.append(5)
-print(list)
+lst = ['1','2','3','4']
+lst.append(5)
+print(lst)
 ['1', '2', '3', '4', 5]
 上面这个例子就可以看出来append里面加的就会直接加到list后面，例如上面就没有加引号。
 其中有引号的是字符串，没有引号的数值int
