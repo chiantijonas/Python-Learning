@@ -186,15 +186,15 @@ print(lst)
 列表的删除Remove(e)方法，删除元素e
 
 ```python
-list = ['1','2','3','4','5']
-list.remove('2')
-print(list)
+lst = ['1','2','3','4','5']
+lst.remove('2')
+print(lst)
 ['1', '3', '4', '5']
 注意一下remove里面的东西是要list里面有的元素，如果上面的remove里面没有加引号，就会报错了。
 
-list = [1,2,3,4,5]
-list.remove(2)
-print(list)
+lst = [1,2,3,4,5]
+lst.remove(2)
+print(lst)
 [1, 3, 4, 5]
 
 
@@ -206,26 +206,26 @@ extend()是往list中添加list2的元素，不会生成新的元素
 +是会生成一个新的list
 
 ```python
-list1 = [1,2,2]
-list2 = [3,4,5]
-list1.extend(list2)
-print(list1)
+lst1 = [1,2,2]
+lst2 = [3,4,5]
+lst1.extend(list2)
+print(lst1)
 [1, 2, 2, 3, 4, 5]
 
 
-list1 = [1,2,2]
-list2 = [3,4,5]
-list1 = list1+list2
+lst1 = [1,2,2]
+lst2 = [3,4,5]
+lst1 = lst1+lst2
 print(list1)
 [1, 2, 2, 3, 4, 5]
 
 上面两个看起来是得到的结果一样，但是实际上第二种用+的实际上生成了一个新的元素。可以叫做list1，也可以更名为别的，存储位置和list1不一样。
 存储位置不一样的例子：
-list1 = [1,2,2]
-print(id(list1))
-list2 = [3,4,5]
-list1 = list1+list2
-print(id(list1))
+lst1 = [1,2,2]
+print(id(lst1))
+lst2 = [3,4,5]
+lst1 = lst1+lst2
+print(id(lst1))
 
 1838314031944
 1838315919112
@@ -245,8 +245,8 @@ print(lst)
 添加元素dict[' ']=''<br>
 
 ```python
-dict={"a":1,"b":2,"c":3}
-dict['d']=4这里要注意一下，给dict加字段的时候，用的是方框括号[],然后等于的值在后面。如果原本就有d，那会更新d对应的value
+dct={"a":1,"b":2,"c":3}
+dct['d']=4这里要注意一下，给dict加字段的时候，用的是方框括号[],然后等于的值在后面。如果原本就有d，那会更新d对应的value
 print(dict)
 >>>{'a': 1, 'b': 2, 'c': 3, 'd': 4}
 
@@ -256,9 +256,9 @@ print(dict)
 删除元素pop
 
 ```python
-dict={'a':1,'b':2,'c':3}
-dict.pop('c')注意一下这里pop是方法，所以用的是小括号()，dict只能对key操作，所以只能pop掉c，而不能像list一样按照索引pop
-print(dict)
+dct={'a':1,'b':2,'c':3}
+dct.pop('c')注意一下这里pop是方法，所以用的是小括号()，dict只能对key操作，所以只能pop掉c，而不能像list一样按照索引pop
+print(dct)
 >>>{'a': 1, 'b': 2}
 ```
 
