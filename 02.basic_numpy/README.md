@@ -187,3 +187,34 @@ numpy.average()<br>
 # 2020-03-19
 ## NumPy 排序、条件刷选函数
 
+
+先说不是numpy里面排序的方式sorted
+```python
+sorted([5,1,7,0,2])
+>>>[0, 1, 2, 5, 7] （但是这里变成了一个list）
+```
+再说用numpy自己的函数sort
+```python
+np.sort([5,1,7,0,2])
+>>>array([0, 1, 2, 5, 7]) （这里是个array）
+```
+argmax和argmin，类似于amax和amin，但是这个函数取的是索引。
+```python
+a = np.array([[1,2],[3,4]])
+np.argmax(a,1)
+>>>array([1, 1], dtype=int64)
+```
+
+where的用法把满足条件的索引抽出来
+```python
+x = np.arange(9.).reshape(3,  3)
+x
+>>>array([[0., 1., 2.],
+       [3., 4., 5.],
+       [6., 7., 8.]])
+np.where(x>3)
+>>>(array([1, 1, 2, 2, 2], dtype=int64), array([1, 2, 0, 1, 2], dtype=int64))（这里得到的都是索引）
+x[y] （这个就是以y为索引取值）
+>>>array([4., 5., 6., 7., 8.])
+```
+
